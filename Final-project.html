@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee ☕ </title>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(235, 82, 108);
+    
+        }
+        h2 {
+            text-align: center;
+            border: 1px solid rgb(235, 82, 108);
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 4px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        p {
+            line-height: 1.5;
+            font-size: 13px;    
+            margin-bottom: 20px 0 10px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            background: rgb(235, 82, 108);
+            color: white;
+            font-size: 18px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 5px 5px 10px black;
+            transition: all 200ms ease-in-out;
+
+        }
+        button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 60px;
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        }
+        .learn-more {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: rgb(235, 82, 108);
+            font-size: 12px;
+        }
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+    <h1>
+        I Love Coffee
+    </h1>
+    <h2>
+        Especially Delicious Coffee
+    </h2>
+    <h3>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/545/original/Coffee.jpg?1672246051" alt="Coffee"
+    width="400"
+    />  
+    
+    </h3>
+    <p>
+        Coffee is a drink prepared from roasted coffee beans. 
+        Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans,
+        primarily due to its caffeine content. It is the most popular hot drink in the world.
+    </p>
+    <a href="https://en.wikipedia.org/wiki/Coffee"
+target="_blank"
+class="learn-more">
+    Learn more on Wikipedia
+</a>
+    <button class="buy-button">
+       👉🏽 Buy Coffee 
+    </button>
+    <h4 class="footer">
+        This page was built by Denise Stephens
+    </h4>
+    </div>
+    <script>
+    function buy() {
+    let name = prompt("What is your name?");
+    let email = prompt("What is your email address?");
+    let emoji = prompt("What is your favorite emoji?");
+
+    alert(
+        "Thank you " + 
+        name + "! We'll be in touch by email, meanwhile enjoy tons of coffee! "
+         + emoji 
+    );
+}
+
+        let buyButton = document.querySelector(".buy-button");
+        buyButton.addEventListener("click", buy);
+    </script>
+</body>
+</html>
